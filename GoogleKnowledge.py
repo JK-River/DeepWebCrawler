@@ -2,6 +2,7 @@
 from selenium import webdriver
 
 def getKnowledge(keyWord):
+    #目前谷歌知识图谱的语言只支持英文，需要设置hl=en
     url = '%s%s' % ("http://www.google.com/search?hl=en&q=",keyWord )
     browser = webdriver.Chrome()
     browser.get(url)
